@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: fegan;
+    src: url(./fonts/Fegan.otf);
+}
+@font-face {
+    font-family: diane;
+    src: url(./fonts/Diane\ de\ France.ttf);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.homeContainer{
+    width: 100%;
+    height: 100%;
+
+}
+.backgroundImage{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    background-image: url(./images/dammy_color.png);
+    background-repeat: no-repeat;
+    background-position-x:90% ;
+    background-position-y: bottom ;
+    background-size: 40% 90%;
+    filter: brightness(0.5);
+}
+.homeHeader{
+    color: white;
+    width: 50%;
+    height: fit-content;
+    position: fixed;
+    z-index: 3;
+    left: 0%;
+    text-align: center;
+    top: 40%;
+
+
+
+}
+.homeHeader h1{
+   background-image: linear-gradient(to right,lime,30%,cyan);
+   -webkit-background-clip: text;
+   color: transparent;
+    font-size: 5rem;
+    font-family: fegan;
+    letter-spacing:3px;
+}
+nav{
+margin: 1em;
+
+}
+nav ul{
+    margin: auto;
+    width: 60%;
+    list-style: none;
+    background-color: red;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    background-image: linear-gradient(to left,lime,cyan);
+    -webkit-background-clip: text;
+    border-radius: 1em; 
+    border: 1px solid #fff3;
+
+}
+nav li a{
+    font-size: 1.5rem;
+    display: block;
+    padding: 0.5em 0;
+    width: 0%;
+    color: transparent;
+    border-bottom: 1px solid cyan;
+    transition: width 0.06s linear;
+
+}
+
+
+nav li a:hover{
+    width: 100%;
+}
+.aboutContainer{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    background-color: black;
+}
+
+.aboutContainer main{
+    position: absolute;
+    color: white;
+    top: 25%;
+    right: 10%;
+    background-color: #fff1;
+    opacity: 0.8;
+    width: 40%;
+    border-radius: 1em;
+    border: 1px solid #fff3;
+    height: fit-content;
+    padding: 1em 3em;
+    box-shadow: 5px 5px 20px #fff2;
+
+    
+}
+.aboutContainer main h1{
+    text-align: center;
+}
+
+
+.aboutContainer main > div{
+    margin: 0.1em;
+    font-size: 1rem;   
+}
+.aboutContainer main p{
+    margin: 0.8em ;
+}
+.aboutContainer i{
+    font-size: 1.5rem;
+    display: block;
+    margin:1em 0;
+}
+.aboutDetails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.aboutDetails a{
+    text-decoration: underline;
+}
+.imagesDisplayContainer{
+    width: 80%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    background-color: #fff2;
+    padding: 0.6em;
+    border: 1px solid cyan;
+    border-radius: 1em;
+    height: 30%;
+    bottom: 5%;
+}
+.imagesDisplayContainer ul{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagesDisplayContainer li{
+background-color: blue;
+width: 19%;
+}
+.imagesDisplayContainer img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+/* .imagesDisplayContainer li:nth-child(1){
+
+} */
+.imagesDisplayContainer img:hover{
+transform: scale(1.2);
+transition-duration: 0.3s;
+}
+.resumeContainer{
+    position: absolute;
+    top: 200%;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    background-color: black;
+}
+.resumeContainer main{
+    position: absolute;
+    color: white;
+    top:1.4%;
+    right: 10%;
+    background-color: #fff1;
+    opacity: 0.8;
+    width: 40%;
+    border-radius: 1em;
+    border: 1px solid #fff3;
+    height: fit-content;
+    padding: 3em 3em;
+    box-shadow: 5px 5px 20px #fff2;
+    font-size: 1.07rem;
+
+}
+.resumeContainer main ul{
+    display: flex;
+    justify-content: space-around;
+    /* width: 90%; */
+}
+
+.resumeContainer ul,.resumeContainer p,.resumeContainer li{
+    margin: 0.1em 0;
+    line-height: 27px;
+    font-size:1.2rem;
+}
+.contactContainer{
+    position: absolute;
+    top: 300%;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    background-color: black;
+}
+.contactContainer main{
+    position: absolute;
+    color: white;
+    top:17%;
+    right: 10%;
+    opacity: 0.8;
+    width: 40%;
+    border-radius: 1em;
+    height: fit-content;
+    padding: 3em 3em;
+    font-size: 1.07rem;
+
+}
+.contactContainer form input,.contactContainer form textarea{
+display: block;
+margin: 1.6em 0;
+width: 100%;
+outline: 0;
+font-size: 1.3em;
+max-width: 100%;
+padding: 0.1em 0.7em;
+color: white;
+
+}
+.contactContainer form input{
+    height: 50px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid white;
+    outline: 0;
+
+}.contactContainer form input::placeholder{
+    color: #fffd;
+}
+.contactContainer button{
+    width: 30%;
+    height: 40px;
+    border-radius: 1em;
+    background-image: linear-gradient(to left,green,30%,cyan);
+    border: 0;
+    font-size: 1.2em;
+    color: white;
+    cursor: pointer;
+}
+.contactContainer button:hover{
+    background-image: linear-gradient(to left,green,100%,cyan);
+    transition-duration: 2s;
+
+}
+.contactContainer textarea{
+    background-color: transparent;
+    border: 1px solid white;
+   
+    
+}

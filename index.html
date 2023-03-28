@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dammy's Personal Website</title>
+   
+</head>
+<body>
+    <script>
+        document.body.onload = ()=>{
+            alert('welcome to my site')
+        }
+    </script>
+    <div id="home" class="homeContainer">
+       <div class="backgroundImage">
+
+       </div>
+       <header class="homeHeader">
+        <h1>OLUWADAMILOLA</h1>
+        <h2>FRONDEND WEB DEVELOPER</h2>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+    <div id="about" class="aboutContainer">
+        <main>
+            <h1>
+               <u>ABOUT</u> 
+            </h1>
+            <i>A frontend website developer experienced with building functional landing pages for e-commerce sites using Html, Css,Bootstrap and JavaScript. Exhibiting problem solving skills and a very good team player.  </i>
+        <div class="aboutDetails">
+            <div>
+               <p>Email: <span>oluwadamilola.adebukola@yahoo.com</span></p> 
+                <p>Degree: <span>B.A</span></p>
+                <p>Phone: 09027176869</p>
+            </div>
+            <div>
+                <p>City: <span>Lagos</span></p>
+                <p>Github: <a target="_blank" href="http://github.com/Aadebukola">http://github.com/Aadebukola</a></p>
+                <p>Occupation: <span>Freelancer</span></p>
+            </div>
+        </div>
+        </main>
+        <div class="imagesDisplayContainer">
+            <ul>
+                <li>
+                    <img src="./images/one.jpeg" alt="">
+                </li>
+                <li>
+                    <img src="./images/two.jpeg" alt="">
+                </li>
+                <li>
+                    <img src="./images/three.jpeg" alt="">
+                </li>
+                <li>
+                    <img src="./images/four.jpeg" alt="">
+                </li>
+                <li>
+                    <img src="./images/five.jpeg" alt="">
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="resume" class="resumeContainer">
+    <main>
+        <h1>SKILLS AND CORE COMPETENCIES</h1>
+        <ul>
+            <div>
+                <li>Effective communication</li>
+                <li>Attention to details</li>
+                <li>Web Design</li>
+                <li>Client Relation</li>
+            </div>
+            <div>
+                <li>Html</li>
+                <li>Css</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+            </div>
+        </ul>
+        <h1>PROFESSIONAL EXPERIENCE</h1>
+        <P>Intern, Front-end developer | SOAIR, Ikeja, Lagos State
+            <li>Learned frontend object-oriented programming to develop client-server Systems.</li>
+            <li>Collaborated with the development team in maintaining website.</li>
+            <li>Project- Utilized Html, CSS and JavaScript to create responsive catering ordering website.</li>
+        </P>
+        <P>
+        National Youth Service Corps, Analyst | Nigerian Airspace Management Agency March 2021– Feb 2022
+            <li>Achieved 100+ engagements and got positive responses on strategies and analysis.</li>
+            <li>Provided exceptional support to co-workers which increased the overall efficiency by 30%.</li>
+            <li>Recognised as the most-committed Corp member in the organization.</li>
+            <li>Collaborated with other departments to ascertain flight management</li>           
+        </P>
+        <P>
+        Office Assistant| Temi-B Computer Institute, LASU Complex, Ojo, Lagos State July 2018 – Nov 2019
+            <li>Scheduled and took minutes of meetings and reported to the team head on any issue faced.</li>
+            <li>Successfully planned and executed daily corporate activities and received excellent feedbacks which
+            further helped the department.</li>
+            <li>Increased office organization by developing an efficient filing system and staff database protocols.</li>
+            <li>Created mailing correspondence to client and employees.</li>
+        </P>
+    </main>
+    </div>
+    <div id="contact" class="contactContainer">
+        <main>
+            <h3>Send Me A Message</h3>
+            <form action="" >
+                <input type="text" placeholder="E-mail address">
+                <input type="text" placeholder="Name">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message">
+
+                </textarea>
+                <button onclick="handleClick()">Send</button>
+            </form>
+        </main>
+    </div>
+    <script>
+        function handleClick(e){
+            e.preventDefault()
+           
+        }
+    </script>
+</body>
+</html>
