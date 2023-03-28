@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: 12px;
+    font-size: 13px;
 }
 @font-face {
     font-family: fegan;
@@ -125,11 +125,11 @@ nav li a:hover{
 .aboutContainer main{
     position: absolute;
     color: white;
-    top: 18%;
+    top: 14%;
     right: 10%;
     background-color: #fff1;
     opacity: 0.8;
-    width: 40%;
+    width: 50%;
     border-radius: 1em;
     border: 1px solid #fff3;
     height: fit-content;
@@ -220,7 +220,7 @@ transition-duration: 0.3s;
     border-radius: 1em;
     border: 1px solid #fff3;
     height: fit-content;
-    padding: 2em 3em;
+    padding: 1.4em 3em;
     box-shadow: 5px 5px 20px #fff2;
     font-size: 1.07rem;
 
